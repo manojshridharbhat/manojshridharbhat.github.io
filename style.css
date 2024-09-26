@@ -134,7 +134,7 @@ section ul {
 }
 
 /* Skills Section */
-.skills-section {
+.skills {
   margin: 20px 0;
   background-color: #fbfbfb; /* Light dark background for skills section */
   padding: 20px; /* Padding around the section */
@@ -143,20 +143,20 @@ section ul {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 20px;
   margin-bottom: 10px;
   color: rgb(20, 28, 80); /* Text color for the main heading */
 }
 
 h3 {
-  margin: 24px 0 10px; /* Margin for spacing around section headings */
+  margin: 10px 0 10px; /* Margin for spacing around section headings */
   color: rgb(23, 32, 99); /* Text color for section headings */
 }
 
 .skills-list {
   display: flex; /* Use flexbox for horizontal layout */
   flex-wrap: wrap; /* Allow wrapping to the next line */
-  gap: 10px; /* Space between each skill */
+  gap: 25px; /* Space between each skill */
   justify-content: center; /* Center the skills within the section */
 }
 
