@@ -1,20 +1,68 @@
 /* Global Styles */
+/* Base styles for larger screens */
 body {
   font-family: "Poppins", sans-serif;
-  margin: 0;
   padding: 0;
-  background: linear-gradient(
-    135deg,
-    #000000 0%,
-    #000000 100%
-  ); /* Soft pastel gradient */
-  color: #333;
+  margin: 0;
 }
 
+/* Ensure container class does not overflow */
 .container {
-  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 20px;
+}
+
+/* Responsive grid for project section */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.Skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Adjust text size */
+  body {
+    font-size: 16px;
+  }
+
+  .Skills-list {
+    flex-direction: column;
+  }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Reduce padding for smaller screens */
+  .container {
+    padding: 10px;
+  }
+
+  /* Adjust header and footer */
+  header,
+  footer {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .nav-list {
+    flex-direction: column;
+  }
 }
 
 /* Header Styles */
