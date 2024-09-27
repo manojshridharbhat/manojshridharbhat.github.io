@@ -4,6 +4,8 @@ body {
   font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
+  width: 100%; /* Ensure full width on all screens */
+  box-sizing: border-box; /* Ensure padding/margins are calculated properly */
 }
 
 /* Ensure container class does not overflow */
@@ -18,6 +20,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  overflow-wrap: break-word; /* Prevent text overflow */
 }
 
 .Skills-list {
@@ -51,6 +54,14 @@ body {
   /* Reduce padding for smaller screens */
   .container {
     padding: 10px;
+  }
+
+  /* Fix content shift to the left */
+  body {
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box; /* Proper padding/margin calculations */
   }
 
   /* Adjust header and footer */
